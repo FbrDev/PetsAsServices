@@ -1,0 +1,13 @@
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\bin\Debug\PetsAsServices.exe.config
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\bin\Debug\PetsAsServices.exe
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\bin\Debug\PetsAsServices.pdb
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.csproj.AssemblyReference.cache
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.csproj.SuggestedBindingRedirects.cache
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.Properties.Resources.resources
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.csproj.GenerateResource.cache
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.csproj.CoreCompileInputs.cache
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.exe
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.pdb
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.frmTelaInicial.resources
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.frmBuscarRaca.resources
+C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.frmMeusFavoritos.resources
