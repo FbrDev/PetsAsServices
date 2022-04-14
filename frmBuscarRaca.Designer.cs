@@ -40,9 +40,9 @@
             this.cbRaca = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnFavoritar = new System.Windows.Forms.Button();
-            this.lblResult1 = new System.Windows.Forms.Label();
-            this.lblResult2 = new System.Windows.Forms.Label();
-            this.lblResult3 = new System.Windows.Forms.Label();
+            this.lblTemperamento = new System.Windows.Forms.Label();
+            this.lblOrigem = new System.Windows.Forms.Label();
+            this.lblDescricao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGatinho)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,7 +120,6 @@
             // 
             // pictureBoxGatinho
             // 
-            this.pictureBoxGatinho.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxGatinho.Image")));
             this.pictureBoxGatinho.Location = new System.Drawing.Point(12, 410);
             this.pictureBoxGatinho.Name = "pictureBoxGatinho";
             this.pictureBoxGatinho.Size = new System.Drawing.Size(258, 184);
@@ -132,12 +131,13 @@
             // 
             this.cbRaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRaca.FormattingEnabled = true;
+            this.cbRaca.Items.AddRange(new object[] {
+            ""});
             this.cbRaca.Location = new System.Drawing.Point(299, 130);
             this.cbRaca.Name = "cbRaca";
             this.cbRaca.Size = new System.Drawing.Size(180, 24);
             this.cbRaca.TabIndex = 8;
             this.cbRaca.Text = "Selecione uma Raça";
-            this.cbRaca.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnBuscar
             // 
@@ -158,34 +158,32 @@
             this.btnFavoritar.Text = "Favoritar";
             this.btnFavoritar.UseVisualStyleBackColor = true;
             // 
-            // lblResult1
+            // lblTemperamento
             // 
-            this.lblResult1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult1.Location = new System.Drawing.Point(186, 182);
-            this.lblResult1.Name = "lblResult1";
-            this.lblResult1.Size = new System.Drawing.Size(211, 43);
-            this.lblResult1.TabIndex = 11;
-            this.lblResult1.Text = "Resultado";
-            this.lblResult1.Click += new System.EventHandler(this.label8_Click);
+            this.lblTemperamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemperamento.Location = new System.Drawing.Point(186, 182);
+            this.lblTemperamento.Name = "lblTemperamento";
+            this.lblTemperamento.Size = new System.Drawing.Size(211, 43);
+            this.lblTemperamento.TabIndex = 11;
+            this.lblTemperamento.Text = "Resultado";
             // 
-            // lblResult2
+            // lblOrigem
             // 
-            this.lblResult2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult2.Location = new System.Drawing.Point(485, 182);
-            this.lblResult2.Name = "lblResult2";
-            this.lblResult2.Size = new System.Drawing.Size(152, 43);
-            this.lblResult2.TabIndex = 12;
-            this.lblResult2.Text = "Resultado";
-            this.lblResult2.Click += new System.EventHandler(this.label9_Click);
+            this.lblOrigem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrigem.Location = new System.Drawing.Point(485, 182);
+            this.lblOrigem.Name = "lblOrigem";
+            this.lblOrigem.Size = new System.Drawing.Size(152, 43);
+            this.lblOrigem.TabIndex = 12;
+            this.lblOrigem.Text = "Resultado";
             // 
-            // lblResult3
+            // lblDescricao
             // 
-            this.lblResult3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult3.Location = new System.Drawing.Point(148, 239);
-            this.lblResult3.Name = "lblResult3";
-            this.lblResult3.Size = new System.Drawing.Size(489, 156);
-            this.lblResult3.TabIndex = 13;
-            this.lblResult3.Text = "Resultado";
+            this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricao.Location = new System.Drawing.Point(148, 239);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(489, 156);
+            this.lblDescricao.TabIndex = 13;
+            this.lblDescricao.Text = "Resultado";
             // 
             // frmBuscarRaca
             // 
@@ -194,9 +192,9 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(668, 605);
-            this.Controls.Add(this.lblResult3);
-            this.Controls.Add(this.lblResult2);
-            this.Controls.Add(this.lblResult1);
+            this.Controls.Add(this.lblDescricao);
+            this.Controls.Add(this.lblOrigem);
+            this.Controls.Add(this.lblTemperamento);
             this.Controls.Add(this.btnFavoritar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.cbRaca);
@@ -229,12 +227,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBoxGatinho;
         private System.Windows.Forms.ComboBox cbRaca;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnFavoritar;
-        private System.Windows.Forms.Label lblResult1;
-        private System.Windows.Forms.Label lblResult2;
-        private System.Windows.Forms.Label lblResult3;
+        private System.Windows.Forms.Label lblTemperamento;
+        private System.Windows.Forms.Label lblOrigem;
+        private System.Windows.Forms.Label lblDescricao;
+        private System.Windows.Forms.PictureBox pictureBoxGatinho;
     }
 }
