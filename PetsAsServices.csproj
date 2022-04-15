@@ -84,10 +84,16 @@
     <Compile Include="APIServices\CatFavoritesModel.cs" />
     <Compile Include="APIServices\CatImageModel.cs" />
     <Compile Include="APIServices\CatModel.cs" />
-    <Compile Include="frmMeusFavoritos.cs">
+    <Compile Include="Forms\CatAsService\frmCatAsServices.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMeusFavoritos.Designer.cs">
+    <Compile Include="Forms\CatAsService\frmCatAsServices.Designer.cs">
+      <DependentUpon>frmCatAsServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CatAsService\frmMeusFavoritos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CatAsService\frmMeusFavoritos.Designer.cs">
       <DependentUpon>frmMeusFavoritos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTelaInicial.cs">
@@ -96,19 +102,22 @@
     <Compile Include="frmTelaInicial.Designer.cs">
       <DependentUpon>frmTelaInicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBuscarRaca.cs">
+    <Compile Include="Forms\CatAsService\frmBuscarRaca.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBuscarRaca.Designer.cs">
+    <Compile Include="Forms\CatAsService\frmBuscarRaca.Designer.cs">
       <DependentUpon>frmBuscarRaca.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
-    <EmbeddedResource Include="frmBuscarRaca.resx">
+    <EmbeddedResource Include="Forms\CatAsService\frmBuscarRaca.resx">
       <DependentUpon>frmBuscarRaca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMeusFavoritos.resx">
+    <EmbeddedResource Include="Forms\CatAsService\frmCatAsServices.resx">
+      <DependentUpon>frmCatAsServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CatAsService\frmMeusFavoritos.resx">
       <DependentUpon>frmMeusFavoritos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTelaInicial.resx">
@@ -155,6 +164,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\IconesMenu\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\catBuscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\IconesMenu\cross-out %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

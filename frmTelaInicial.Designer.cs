@@ -29,257 +29,397 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaInicial));
-            this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnNotificacoes = new System.Windows.Forms.Button();
+            this.btnDados = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnOrdem = new System.Windows.Forms.Button();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.btnConfig = new System.Windows.Forms.Button();
+            this.btnDogs = new System.Windows.Forms.Button();
+            this.btnCats = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnProduct = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnMenuBuscar = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnMenuFavoritos = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnMaximize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnCloseChildForm = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelDesktopPane = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelLogo.SuspendLayout();
+            this.panelTitleBar.SuspendLayout();
+            this.panelDesktopPane.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(484, 389);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(580, 45);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bem vindo ao Cat as Service!";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnMenuBuscar,
-            this.btnMenuFavoritos});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1262, 28);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.button5);
-            this.panelMenu.Controls.Add(this.button4);
-            this.panelMenu.Controls.Add(this.button3);
-            this.panelMenu.Controls.Add(this.button2);
-            this.panelMenu.Controls.Add(this.button1);
-            this.panelMenu.Controls.Add(this.btnProduct);
+            this.panelMenu.Controls.Add(this.btnNotificacoes);
+            this.panelMenu.Controls.Add(this.btnDados);
+            this.panelMenu.Controls.Add(this.btnClientes);
+            this.panelMenu.Controls.Add(this.btnOrdem);
+            this.panelMenu.Controls.Add(this.btnProducts);
+            this.panelMenu.Controls.Add(this.btnConfig);
+            this.panelMenu.Controls.Add(this.btnDogs);
+            this.panelMenu.Controls.Add(this.btnCats);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 28);
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 645);
+            this.panelMenu.Size = new System.Drawing.Size(220, 573);
             this.panelMenu.TabIndex = 3;
+            // 
+            // btnNotificacoes
+            // 
+            this.btnNotificacoes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNotificacoes.FlatAppearance.BorderSize = 0;
+            this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotificacoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnNotificacoes.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnNotificacoes.Image = global::PetsAsServices.Properties.Resources.alarm__1_;
+            this.btnNotificacoes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNotificacoes.Location = new System.Drawing.Point(0, 440);
+            this.btnNotificacoes.Name = "btnNotificacoes";
+            this.btnNotificacoes.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnNotificacoes.Size = new System.Drawing.Size(220, 60);
+            this.btnNotificacoes.TabIndex = 10;
+            this.btnNotificacoes.Text = "   Notification";
+            this.btnNotificacoes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNotificacoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNotificacoes.UseVisualStyleBackColor = true;
+            this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
+            // 
+            // btnDados
+            // 
+            this.btnDados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDados.FlatAppearance.BorderSize = 0;
+            this.btnDados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnDados.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDados.Image = global::PetsAsServices.Properties.Resources.bar_chart;
+            this.btnDados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDados.Location = new System.Drawing.Point(0, 380);
+            this.btnDados.Name = "btnDados";
+            this.btnDados.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnDados.Size = new System.Drawing.Size(220, 60);
+            this.btnDados.TabIndex = 9;
+            this.btnDados.Text = "   Dados";
+            this.btnDados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDados.UseVisualStyleBackColor = true;
+            this.btnDados.Click += new System.EventHandler(this.btnDados_Click);
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnClientes.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnClientes.Image = global::PetsAsServices.Properties.Resources.value__1_;
+            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.Location = new System.Drawing.Point(0, 320);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnClientes.Size = new System.Drawing.Size(220, 60);
+            this.btnClientes.TabIndex = 8;
+            this.btnClientes.Text = "   Cliente";
+            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // btnOrdem
+            // 
+            this.btnOrdem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrdem.FlatAppearance.BorderSize = 0;
+            this.btnOrdem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnOrdem.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnOrdem.Image = global::PetsAsServices.Properties.Resources.shopping_list;
+            this.btnOrdem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdem.Location = new System.Drawing.Point(0, 260);
+            this.btnOrdem.Name = "btnOrdem";
+            this.btnOrdem.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnOrdem.Size = new System.Drawing.Size(220, 60);
+            this.btnOrdem.TabIndex = 7;
+            this.btnOrdem.Text = "   Ordens";
+            this.btnOrdem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnOrdem.UseVisualStyleBackColor = true;
+            this.btnOrdem.Click += new System.EventHandler(this.btnOrdem_Click);
+            // 
+            // btnProducts
+            // 
+            this.btnProducts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProducts.FlatAppearance.BorderSize = 0;
+            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnProducts.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnProducts.Image = global::PetsAsServices.Properties.Resources.shopping_cart__1_;
+            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProducts.Location = new System.Drawing.Point(0, 200);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnProducts.Size = new System.Drawing.Size(220, 60);
+            this.btnProducts.TabIndex = 6;
+            this.btnProducts.Text = "   Produtos";
+            this.btnProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            // 
+            // btnConfig
+            // 
+            this.btnConfig.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnConfig.FlatAppearance.BorderSize = 0;
+            this.btnConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnConfig.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnConfig.Image = global::PetsAsServices.Properties.Resources.settings;
+            this.btnConfig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfig.Location = new System.Drawing.Point(0, 513);
+            this.btnConfig.Name = "btnConfig";
+            this.btnConfig.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnConfig.Size = new System.Drawing.Size(220, 60);
+            this.btnConfig.TabIndex = 5;
+            this.btnConfig.Text = "   Settings";
+            this.btnConfig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfig.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConfig.UseVisualStyleBackColor = true;
+            this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
+            // 
+            // btnDogs
+            // 
+            this.btnDogs.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDogs.FlatAppearance.BorderSize = 0;
+            this.btnDogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnDogs.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDogs.Image = global::PetsAsServices.Properties.Resources.shopping_list;
+            this.btnDogs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDogs.Location = new System.Drawing.Point(0, 140);
+            this.btnDogs.Name = "btnDogs";
+            this.btnDogs.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnDogs.Size = new System.Drawing.Size(220, 60);
+            this.btnDogs.TabIndex = 1;
+            this.btnDogs.Text = "   Cachorros";
+            this.btnDogs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDogs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDogs.UseVisualStyleBackColor = true;
+            this.btnDogs.Click += new System.EventHandler(this.btnDogs_Click);
+            // 
+            // btnCats
+            // 
+            this.btnCats.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCats.FlatAppearance.BorderSize = 0;
+            this.btnCats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnCats.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCats.Image = global::PetsAsServices.Properties.Resources.shopping_cart__1_;
+            this.btnCats.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCats.Location = new System.Drawing.Point(0, 80);
+            this.btnCats.Name = "btnCats";
+            this.btnCats.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnCats.Size = new System.Drawing.Size(220, 60);
+            this.btnCats.TabIndex = 0;
+            this.btnCats.Text = "   Gatos";
+            this.btnCats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCats.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCats.UseVisualStyleBackColor = true;
+            this.btnCats.Click += new System.EventHandler(this.btnCats_Click);
             // 
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.Controls.Add(this.label2);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(220, 80);
             this.panelLogo.TabIndex = 0;
             // 
-            // button5
+            // label2
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button5.Image = global::PetsAsServices.Properties.Resources.settings;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 380);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(220, 60);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "   Configurações";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightGray;
+            this.label2.Location = new System.Drawing.Point(25, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(161, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Pets As Services";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button4
+            // panelTitleBar
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.Image = global::PetsAsServices.Properties.Resources.alarm__1_;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 320);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(220, 60);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "   Notificações";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitleBar.Controls.Add(this.btnMinimize);
+            this.panelTitleBar.Controls.Add(this.btnMaximize);
+            this.panelTitleBar.Controls.Add(this.btnClose);
+            this.panelTitleBar.Controls.Add(this.btnCloseChildForm);
+            this.panelTitleBar.Controls.Add(this.lblTitle);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelTitleBar.ForeColor = System.Drawing.Color.White;
+            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(862, 80);
+            this.panelTitleBar.TabIndex = 4;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
-            // button3
+            // btnMinimize
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Image = global::PetsAsServices.Properties.Resources.bar_chart;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 260);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(220, 60);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "   Dados";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimize.ForeColor = System.Drawing.Color.White;
+            this.btnMinimize.Location = new System.Drawing.Point(779, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimize.TabIndex = 8;
+            this.btnMinimize.Text = "O";
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // button2
+            // btnMaximize
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Image = global::PetsAsServices.Properties.Resources.value__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 200);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(220, 60);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "   Cliente";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximize.FlatAppearance.BorderSize = 0;
+            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaximize.ForeColor = System.Drawing.Color.White;
+            this.btnMaximize.Location = new System.Drawing.Point(806, 0);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
+            this.btnMaximize.TabIndex = 7;
+            this.btnMaximize.Text = "O";
+            this.btnMaximize.UseVisualStyleBackColor = true;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
-            // button1
+            // btnClose
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Image = global::PetsAsServices.Properties.Resources.shopping_list;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 140);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(220, 60);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "   Ordens";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(832, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(30, 30);
+            this.btnClose.TabIndex = 6;
+            this.btnClose.Text = "O";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // btnProduct
+            // btnCloseChildForm
             // 
-            this.btnProduct.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProduct.FlatAppearance.BorderSize = 0;
-            this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnProduct.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnProduct.Image = global::PetsAsServices.Properties.Resources.shopping_cart__1_;
-            this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProduct.Location = new System.Drawing.Point(0, 80);
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnProduct.Size = new System.Drawing.Size(220, 60);
-            this.btnProduct.TabIndex = 0;
-            this.btnProduct.Text = "   Produtos";
-            this.btnProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnProduct.UseVisualStyleBackColor = true;
-            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
+            this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
+            this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseChildForm.Image = global::PetsAsServices.Properties.Resources.cross_out__2_;
+            this.btnCloseChildForm.Location = new System.Drawing.Point(0, 0);
+            this.btnCloseChildForm.Name = "btnCloseChildForm";
+            this.btnCloseChildForm.Size = new System.Drawing.Size(75, 80);
+            this.btnCloseChildForm.TabIndex = 1;
+            this.btnCloseChildForm.UseVisualStyleBackColor = true;
+            this.btnCloseChildForm.Click += new System.EventHandler(this.btnCloseChildForm_Click);
             // 
-            // pictureBox1
+            // lblTitle
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(687, 207);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(174, 161);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(347, 23);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(96, 37);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "HOME";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnMenuBuscar
+            // panelDesktopPane
             // 
-            this.btnMenuBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuBuscar.Image")));
-            this.btnMenuBuscar.Name = "btnMenuBuscar";
-            this.btnMenuBuscar.Size = new System.Drawing.Size(128, 24);
-            this.btnMenuBuscar.Text = "Buscar Raças";
-            this.btnMenuBuscar.Click += new System.EventHandler(this.btnMenuBuscar_Click);
+            this.panelDesktopPane.Controls.Add(this.label1);
+            this.panelDesktopPane.Controls.Add(this.lblTime);
+            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPane.Location = new System.Drawing.Point(220, 80);
+            this.panelDesktopPane.Name = "panelDesktopPane";
+            this.panelDesktopPane.Size = new System.Drawing.Size(862, 493);
+            this.panelDesktopPane.TabIndex = 5;
             // 
-            // btnMenuFavoritos
+            // label1
             // 
-            this.btnMenuFavoritos.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuFavoritos.Image")));
-            this.btnMenuFavoritos.Name = "btnMenuFavoritos";
-            this.btnMenuFavoritos.Size = new System.Drawing.Size(141, 24);
-            this.btnMenuFavoritos.Text = "Meus Favoritos";
-            this.btnMenuFavoritos.Click += new System.EventHandler(this.btnMenuFavoritos_Click);
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(124, 205);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(600, 45);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Bem vindo ao Pets as Service!";
+            // 
+            // lblTime
+            // 
+            this.lblTime.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(292, 250);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(221, 58);
+            this.lblTime.TabIndex = 0;
+            this.lblTime.Text = "00:00:00";
             // 
             // frmTelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(1082, 573);
+            this.Controls.Add(this.panelDesktopPane);
+            this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1100, 600);
             this.Name = "frmTelaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bem vindo ao Cat As Service";
+            this.Text = "Pets As Service";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
+            this.panelTitleBar.ResumeLayout(false);
+            this.panelTitleBar.PerformLayout();
+            this.panelDesktopPane.ResumeLayout(false);
+            this.panelDesktopPane.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem btnMenuBuscar;
-        private System.Windows.Forms.ToolStripMenuItem btnMenuFavoritos;
+        private System.Windows.Forms.Button btnCats;
+        private System.Windows.Forms.Button btnConfig;
+        private System.Windows.Forms.Button btnDogs;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnNotificacoes;
+        private System.Windows.Forms.Button btnDados;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnOrdem;
+        private System.Windows.Forms.Button btnProducts;
+        private System.Windows.Forms.Panel panelDesktopPane;
+        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Button btnCloseChildForm;
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelTitleBar;
+        public System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnMaximize;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMinimize;
     }
 }
 
