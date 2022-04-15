@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMeusFavoritos));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnExcluirFavorito = new System.Windows.Forms.Button();
+            this.catFavoritesModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lbFavoritos = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.catFavoritesModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -55,29 +58,35 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
             // btnExcluirFavorito
             // 
             resources.ApplyResources(this.btnExcluirFavorito, "btnExcluirFavorito");
             this.btnExcluirFavorito.Name = "btnExcluirFavorito";
             this.btnExcluirFavorito.UseVisualStyleBackColor = true;
             // 
+            // catFavoritesModelBindingSource
+            // 
+            this.catFavoritesModelBindingSource.DataSource = typeof(CatFavoritesModel);
+            // 
+            // lbFavoritos
+            // 
+            this.lbFavoritos.FormattingEnabled = true;
+            resources.ApplyResources(this.lbFavoritos, "lbFavoritos");
+            this.lbFavoritos.Name = "lbFavoritos";
+            // 
             // frmMeusFavoritos
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbFavoritos);
             this.Controls.Add(this.btnExcluirFavorito);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "frmMeusFavoritos";
             this.Load += new System.EventHandler(this.frmMeusFavoritos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.catFavoritesModelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,7 +97,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnExcluirFavorito;
+        private System.Windows.Forms.BindingSource catFavoritesModelBindingSource;
+        private System.Windows.Forms.ListBox lbFavoritos;
     }
 }

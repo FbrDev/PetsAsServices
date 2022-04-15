@@ -21,7 +21,18 @@ namespace PetsAsServices
         }
         private void frmMeusFavoritos_Load(object sender, EventArgs e)
         {
-            apiCatAsService.GetFavorites();
+            carregaCatFavoritos();
+        }
+
+        public void carregaCatFavoritos()
+        {
+            var result = apiCatAsService.GetFavorites();
+            Object[] ItemObject = new Object[result.Count];
+            for (int i = 0; i < result.Count; i++)
+            {
+                ItemObject[i] = result[i].sub_id;
+            }
+            lbFavoritos.Items.AddRange(ItemObject);
         }
     }
 }
