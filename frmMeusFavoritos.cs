@@ -34,5 +34,34 @@ namespace PetsAsServices
             }
             lbFavoritos.Items.AddRange(ItemObject);
         }
+
+        private void btnExcluirFavorito_Click(object sender, EventArgs e)
+        {
+            if (lbFavoritos.SelectedItem != null)
+            {
+                try
+                {
+                    var itemSelecionado = lbFavoritos.SelectedItem.ToString();
+                    var cat = apiCatAsService.GetFavorites().Find(model => model.sub_id == itemSelecionado);
+                    var result = apiCatAsService.DeleteFavorites(cat.id);
+                    if (result)
+                    {
+                        MessageBox.Show("Raça Favorita Excluida com Sucesso");
+                        lbFavoritos.Items.Clear();
+                        carregaCatFavoritos();
+                    }
+                    else
+                        MessageBox.Show("Não foi possível excluir a Raça favorita");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao recuperar favorito" + ex);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione uma raça para excluir!");
+            }
+        }
     }
 }

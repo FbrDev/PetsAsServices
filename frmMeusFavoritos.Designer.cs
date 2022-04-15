@@ -63,6 +63,7 @@
             resources.ApplyResources(this.btnExcluirFavorito, "btnExcluirFavorito");
             this.btnExcluirFavorito.Name = "btnExcluirFavorito";
             this.btnExcluirFavorito.UseVisualStyleBackColor = true;
+            this.btnExcluirFavorito.Click += new System.EventHandler(this.btnExcluirFavorito_Click);
             // 
             // catFavoritesModelBindingSource
             // 

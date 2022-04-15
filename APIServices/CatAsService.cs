@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using RestSharp;
 using Newtonsoft.Json;
 using RestSharp.Deserializers;
@@ -79,13 +80,26 @@ namespace PetsAsServices.APIServices
         {
             var client = new RestClient("https://api.thecatapi.com/v1/favourites");
             var request = new RestRequest(Method.GET);
-            request.AddHeader("x-api-key", "9b045339-3b6e-4560-94c7-74f0a63167e4");
+            request.AddHeader("x-api-key", $"{ApiKey}");
             IRestResponse response = client.Execute(request);
 
             List<CatFavoritesModel> resultados =
                 JsonConvert.DeserializeObject<List<CatFavoritesModel>>(response.Content.ToString());
 
             return resultados;
+        }
+
+        public bool DeleteFavorites(int favourite_id)
+        {
+            var client = new RestClient($"https://api.thecatapi.com/v1/favourites/{favourite_id}");
+            var request = new RestRequest(Method.DELETE);
+            request.AddHeader("x-api-key", $"{ApiKey}");
+            IRestResponse response = client.Execute(request);
+
+            if (response.StatusCode == HttpStatusCode.OK)
+                return true;
+            else
+                return false;
         }
     }
 }
