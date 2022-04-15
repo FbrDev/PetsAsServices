@@ -157,6 +157,7 @@
             this.btnFavoritar.TabIndex = 10;
             this.btnFavoritar.Text = "Favoritar";
             this.btnFavoritar.UseVisualStyleBackColor = true;
+            this.btnFavoritar.Click += new System.EventHandler(this.btnFavoritar_Click);
             // 
             // lblTemperamento
             // 

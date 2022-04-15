@@ -44,19 +44,16 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 

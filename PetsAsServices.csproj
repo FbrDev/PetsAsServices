@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APIServices\CatAsService.cs" />
+    <Compile Include="APIServices\CatFavoritesModel.cs" />
     <Compile Include="APIServices\CatImageModel.cs" />
     <Compile Include="APIServices\CatModel.cs" />
     <Compile Include="frmMeusFavoritos.cs">

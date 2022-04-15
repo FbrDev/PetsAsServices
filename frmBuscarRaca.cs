@@ -61,5 +61,23 @@ namespace PetsAsServices
             lblTemperamento.Text = resultado.temperament;
             pictureBoxGatinho.ImageLocation = ApiCatAsService.GetImagePorId(resultado.reference_image_id);
         }
+
+        private void btnFavoritar_Click(object sender, EventArgs e)
+        {
+            if (cbRaca.SelectedIndex > 0)
+            {
+                string idRaca = cbRaca.Text;
+                FavoritarRaca(ApiCatAsService.GetCaracteristicasPorID(idRaca));
+            }
+            else
+            {
+                MessageBox.Show("Selecione uma raça para Favoritar");
+            }
+        }
+        private void FavoritarRaca(CatModel resultado)
+        {
+            ApiCatAsService.FavoritarRacaPost(resultado.reference_image_id, resultado.name);
+            MessageBox.Show($"A raça {resultado.name} foi favoritada com sucesso");
+        }
     }
 }
