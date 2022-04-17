@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20pt</value>
@@ -200,29 +204,11 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 102</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 299</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="btnExcluirFavorito.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="btnExcluirFavorito.Location" type="System.Drawing.Point, System.Drawing">
-    <value>636, 381</value>
+    <value>630, 392</value>
   </data>
   <data name="btnExcluirFavorito.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 46</value>
@@ -243,6 +229,48 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnExcluirFavorito.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="catFavoritesModelBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="lbFavoritos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lbFavoritos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 96</value>
+  </data>
+  <data name="lbFavoritos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbFavoritos.Name" xml:space="preserve">
+    <value>lbFavoritos</value>
+  </data>
+  <data name="&gt;&gt;lbFavoritos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lb1.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lb1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 94</value>
+  </data>
+  <data name="lb1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 292</value>
+  </data>
+  <data name="lb1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lb1.Name" xml:space="preserve">
+    <value>lb1</value>
+  </data>
+  <data name="&gt;&gt;lb1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lb1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -250,13 +278,6 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 450</value>
@@ -3208,11 +3229,17 @@
         AAAgBAAAYAYAAPAPAADwDwAA8A8AAPgfAAA=
 </value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Verificar Raças Favoritas</value>
+  </data>
+  <data name="&gt;&gt;catFavoritesModelBindingSource.Name" xml:space="preserve">
+    <value>catFavoritesModelBindingSource</value>
+  </data>
+  <data name="&gt;&gt;catFavoritesModelBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmMeusFavoritos</value>

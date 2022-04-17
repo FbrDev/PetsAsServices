@@ -36,50 +36,33 @@
             this.btnExcluirFavorito = new System.Windows.Forms.Button();
             this.catFavoritesModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbFavoritos = new System.Windows.Forms.ListBox();
+            this.lb1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.catFavoritesModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.SystemColors.WindowText;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label3.Location = new System.Drawing.Point(17, 78);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(765, 3);
-            this.label3.TabIndex = 5;
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(14, 47);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(642, 23);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Aqui você encontra a lista de gatinhos favoritos";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 29);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Meus Favoritos";
             // 
             // btnExcluirFavorito
             // 
-            this.btnExcluirFavorito.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExcluirFavorito.Location = new System.Drawing.Point(636, 381);
+            resources.ApplyResources(this.btnExcluirFavorito, "btnExcluirFavorito");
             this.btnExcluirFavorito.Name = "btnExcluirFavorito";
-            this.btnExcluirFavorito.Size = new System.Drawing.Size(146, 46);
-            this.btnExcluirFavorito.TabIndex = 7;
-            this.btnExcluirFavorito.Text = "Excluir Favorito";
             this.btnExcluirFavorito.UseVisualStyleBackColor = true;
             this.btnExcluirFavorito.Click += new System.EventHandler(this.btnExcluirFavorito_Click);
             // 
@@ -93,18 +76,23 @@
             resources.ApplyResources(this.lbFavoritos, "lbFavoritos");
             this.lbFavoritos.Name = "lbFavoritos";
             // 
+            // lb1
+            // 
+            this.lb1.FormattingEnabled = true;
+            resources.ApplyResources(this.lb1, "lb1");
+            this.lb1.Name = "lb1";
+            // 
             // frmMeusFavoritos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lb1);
             this.Controls.Add(this.btnExcluirFavorito);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmMeusFavoritos";
-            this.Text = "Verificar Raças Favoritas";
             this.Load += new System.EventHandler(this.frmMeusFavoritos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.catFavoritesModelBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -120,5 +108,6 @@
         private System.Windows.Forms.Button btnExcluirFavorito;
         private System.Windows.Forms.BindingSource catFavoritesModelBindingSource;
         private System.Windows.Forms.ListBox lbFavoritos;
+        private System.Windows.Forms.ListBox lb1;
     }
 }

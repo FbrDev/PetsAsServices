@@ -32,22 +32,22 @@ namespace PetsAsServices
             {
                 ItemObject[i] = result[i].sub_id;
             }
-            lbFavoritos.Items.AddRange(ItemObject);
+            lb1.Items.AddRange(ItemObject);
         }
 
         private void btnExcluirFavorito_Click(object sender, EventArgs e)
         {
-            if (lbFavoritos.SelectedItem != null)
+            if (lb1.SelectedItem != null)
             {
                 try
                 {
-                    var itemSelecionado = lbFavoritos.SelectedItem.ToString();
+                    var itemSelecionado = lb1.SelectedItem.ToString();
                     var cat = apiCatAsService.GetFavorites().Find(model => model.sub_id == itemSelecionado);
                     var result = apiCatAsService.DeleteFavorites(cat.id);
                     if (result)
                     {
                         MessageBox.Show("Raça Favorita Excluida com Sucesso");
-                        lbFavoritos.Items.Clear();
+                        lb1.Items.Clear();
                         carregaCatFavoritos();
                     }
                     else
