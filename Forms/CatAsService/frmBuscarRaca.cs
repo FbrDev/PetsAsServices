@@ -67,7 +67,13 @@ namespace PetsAsServices
             if (cbRaca.SelectedIndex > 0)
             {
                 string idRaca = cbRaca.Text;
-                FavoritarRaca(ApiCatAsService.GetCaracteristicasPorID(idRaca));
+                var verifica = ApiCatAsService.GetFavorites().Find(model => model.sub_id == idRaca);
+                if (verifica == null)
+                {
+                    FavoritarRaca(ApiCatAsService.GetCaracteristicasPorID(idRaca));
+                }
+                else
+                    MessageBox.Show("Essa Raça já foi favorita!");
             }
             else
             {

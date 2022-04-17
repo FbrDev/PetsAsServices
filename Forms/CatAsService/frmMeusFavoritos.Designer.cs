@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMeusFavoritos));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnExcluirFavorito = new System.Windows.Forms.Button();
+            this.catFavoritesModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lbFavoritos = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.catFavoritesModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -69,14 +72,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Meus Favoritos";
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Location = new System.Drawing.Point(191, 102);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(418, 299);
-            this.panel1.TabIndex = 6;
-            // 
             // btnExcluirFavorito
             // 
             this.btnExcluirFavorito.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -86,14 +81,23 @@
             this.btnExcluirFavorito.TabIndex = 7;
             this.btnExcluirFavorito.Text = "Excluir Favorito";
             this.btnExcluirFavorito.UseVisualStyleBackColor = true;
+            this.btnExcluirFavorito.Click += new System.EventHandler(this.btnExcluirFavorito_Click);
+            // 
+            // catFavoritesModelBindingSource
+            // 
+            this.catFavoritesModelBindingSource.DataSource = typeof(CatFavoritesModel);
+            // 
+            // lbFavoritos
+            // 
+            this.lbFavoritos.FormattingEnabled = true;
+            resources.ApplyResources(this.lbFavoritos, "lbFavoritos");
+            this.lbFavoritos.Name = "lbFavoritos";
             // 
             // frmMeusFavoritos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnExcluirFavorito);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -102,6 +106,7 @@
             this.Name = "frmMeusFavoritos";
             this.Text = "Verificar Raças Favoritas";
             this.Load += new System.EventHandler(this.frmMeusFavoritos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.catFavoritesModelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,7 +117,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnExcluirFavorito;
+        private System.Windows.Forms.BindingSource catFavoritesModelBindingSource;
+        private System.Windows.Forms.ListBox lbFavoritos;
     }
 }
