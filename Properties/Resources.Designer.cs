@@ -93,6 +93,16 @@ namespace PetsAsServices.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CatBuscarIcon {
+            get {
+                object obj = ResourceManager.GetObject("CatBuscarIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap catGif {
             get {
                 object obj = ResourceManager.GetObject("catGif", resourceCulture);

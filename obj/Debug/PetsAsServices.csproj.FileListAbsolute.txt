@@ -34,4 +34,3 @@ C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\bin\Debug\System.ValueT
 C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.csproj.CopyComplete
 C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\bin\Debug\Newtonsoft.Json.dll
 C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\bin\Debug\Newtonsoft.Json.xml
-C:\Users\fabriciopereira\Documents\GitHub\PetsAsServices\obj\Debug\PetsAsServices.Forms.CatAsService.frmCatAsServices.resources
