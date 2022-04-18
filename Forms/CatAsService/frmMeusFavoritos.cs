@@ -18,9 +18,12 @@ namespace PetsAsServices
         {
             InitializeComponent();
             apiCatAsService = new APIServices.CatAsService();
+            
         }
         private void frmMeusFavoritos_Load(object sender, EventArgs e)
         {
+            if (lb1.SelectedItem == null)
+                btnExcluirFavorito.Enabled = false;
             carregaCatFavoritos();
         }
 
@@ -39,6 +42,7 @@ namespace PetsAsServices
         {
             if (lb1.SelectedItem != null)
             {
+                btnExcluirFavorito.Enabled = true;
                 try
                 {
                     var itemSelecionado = lb1.SelectedItem.ToString();
@@ -62,6 +66,12 @@ namespace PetsAsServices
             {
                 MessageBox.Show("Selecione uma raça para excluir!");
             }
+        }
+
+        private void lb1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lb1.SelectedItem != null)
+                btnExcluirFavorito.Enabled = true;
         }
     }
 }

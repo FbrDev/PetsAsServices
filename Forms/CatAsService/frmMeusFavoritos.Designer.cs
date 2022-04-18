@@ -81,6 +81,7 @@
             this.lb1.FormattingEnabled = true;
             resources.ApplyResources(this.lb1, "lb1");
             this.lb1.Name = "lb1";
+            this.lb1.SelectedIndexChanged += new System.EventHandler(this.lb1_SelectedIndexChanged);
             // 
             // frmMeusFavoritos
             // 

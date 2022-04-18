@@ -35,6 +35,16 @@ namespace PetsAsServices
         {
         }
 
+        private void btnBuscarGatos_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmBuscarRaca(), sender);
+        }
+
+        private void btnMeusFavoritos_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmMeusFavoritos(), sender);
+        }
+
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
@@ -50,6 +60,7 @@ namespace PetsAsServices
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
+            btnCloseChildForm.Visible = true;
         }
         
         private void btnCloseChildForm_Click(object sender, EventArgs e)
@@ -90,16 +101,6 @@ namespace PetsAsServices
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState= FormWindowState.Minimized;
-        }
-
-        private void btnBuscarGatos_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmBuscarRaca(), sender);
-        }
-
-        private void btnMeusFavoritos_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmMeusFavoritos(), sender);
         }
     }
 }

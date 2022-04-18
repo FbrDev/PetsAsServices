@@ -66,6 +66,7 @@
             // btnConfig
             // 
             this.btnConfig.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnConfig.Enabled = false;
             this.btnConfig.FlatAppearance.BorderSize = 0;
             this.btnConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
