@@ -20,11 +20,6 @@ Com essa aplicação é possível o usuário:
 | Tela de busca de raças | Contém um campo para que o usuário possa selecionar uma raça e visualizar os resultados da busca de características. O usuário poderá favoritar a raça utilizando o botão de favorito. |
 | Tela de Listagem de Favoritos | Uma tela para exibir a lista de raças favoritadas pelo usuário. |
 
-## Demostração 📹
-Uma apresentação de como o sistema funciona:
-
-![Programa Rodando](https://p1.f0.n0.cdn.getcloudapp.com/items/Z4u7D0Q8/b8f6169a-6116-43e6-bcd4-8098023ae655.gif?source=viewer&v=d2f944b76303e55bcff8d78347cc859d)
-
 Projeto desenvolvido para concluir os desafio Windows Forms do <a href="https://7daysofcode.io/">#7DaysOfCode</a>, com auxilio da instrutora <strong>Giulia Bordignon</strong>.
 
 ### Cronograma do Desafio 
